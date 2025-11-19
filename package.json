@@ -5,7 +5,7 @@
   "scripts": {
     "start": "minista --host",
     "build": "minista build",
-    "preview": "minista preview"
+    "preview": "minista preview --host"
   },
   "prettier": {
     "semi": false
