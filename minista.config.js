@@ -138,5 +138,15 @@ export default defineConfig({
       indent_size: 2,
     },
   },
-  vite: {},
+  vite: {
+    plugins: [
+      {
+        name: 'full-reload',
+        handleHotUpdate({server}) {
+          server.ws.send({type: 'full-reload'})
+          return []
+        }
+      }
+    ]
+  },
 })
