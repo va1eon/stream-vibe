@@ -1,7 +1,7 @@
 .category-card {
   --categoryCardImagesGradientOpacity: 1;
 
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   padding: fluid(30, 20);
   border: var(--border);
@@ -34,6 +34,10 @@
       opacity: var(--categoryCardImagesGradientOpacity);
       transition-duration: var(--transition-duration);
     }
+  }
+
+  &:focus-visible {
+    outline-offset: -2px;
   }
 
   &__image {

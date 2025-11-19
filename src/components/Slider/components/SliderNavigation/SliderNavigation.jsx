@@ -16,6 +16,7 @@ const SliderNavigation = (props) => {
         [`slider-navigation--${mode}`]: mode
       })}
       id={id}
+      data-js-slider-navigation=""
     >
       <Button
         className="slider-navigation__arrow-button slider-navigation__arrow-button--prev"
@@ -23,9 +24,15 @@ const SliderNavigation = (props) => {
         iconName="arrow-left"
         label="Previous Slide"
         isLabelHidden
+        extraAttrs={{
+          'data-js-slider-prev-button': '',
+        }}
       />
       {hasPagination && (
-        <div className="slider-navigation__pagination"/>
+        <div
+          className="slider-navigation__pagination"
+          data-js-slider-pagination=""
+        />
       )}
       <Button
         className="slider-navigation__arrow-button slider-navigation__arrow-button--next"
@@ -33,6 +40,9 @@ const SliderNavigation = (props) => {
         iconName="arrow-right"
         label="Next Slide"
         isLabelHidden
+        extraAttrs={{
+          'data-js-slider-next-button': '',
+        }}
       />
     </div>
   )
