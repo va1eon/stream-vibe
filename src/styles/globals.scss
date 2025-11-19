@@ -1,4 +1,6 @@
 html {
+  scrollbar-gutter: initial;
+
   &.is-lock {
     overflow: hidden;
   }
