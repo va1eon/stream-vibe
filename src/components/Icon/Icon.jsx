@@ -14,6 +14,7 @@ const Icon = (props) => {
         iconId={name}
         fill={hasFill ? 'currentColor' : 'none'}
         stroke={hasFill ? 'none' : 'currentColor'}
+        viewBox="0 0 24 24"
       />
     </span>
   )
