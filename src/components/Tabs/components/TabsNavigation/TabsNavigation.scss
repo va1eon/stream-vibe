@@ -16,6 +16,7 @@
   &::before {
     content: '';
     position: absolute;
+    z-index: -1;
     top: var(--tabsNavigationPadding);
     left: 0;
     width: var(--tabsNavigationActiveButtonWidth);
