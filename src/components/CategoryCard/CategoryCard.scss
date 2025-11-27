@@ -42,7 +42,7 @@
   }
 
   &__image {
-    width: fluid(115, 67);
+    width: 100%;
     height: fluid(124, 68);
     object-fit: cover;
     border-radius: var(--border-radius-m);
@@ -60,6 +60,9 @@
   }
 
   &__title {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid-to-laptop(4, 2);
     font-size: inherit;
     font-weight: 600;
   }
