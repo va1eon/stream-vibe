@@ -12,7 +12,7 @@ const MovieDetails = (props) => {
   const { seasons } = props
 
   const titleId = 'movie-detail-title'
-  const castSliderNavigationId = 'movie-card-slider-navigation'
+  const castSliderNavigationId = 'movie-cast-slider-navigation'
   const castItems = [
     { imgSrc: '/src/assets/images/people/cast-1.jpg', imgAlt: 'Ivan Ivanov', },
     { imgSrc: '/src/assets/images/people/cast-2.jpg', imgAlt: 'Ivan Ivanov', },
