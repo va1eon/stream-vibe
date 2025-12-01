@@ -1,0 +1,51 @@
+.person-card {
+
+  &:has(.person-card__body) {
+    display: flex;
+    align-items: center;
+    column-gap: fluid-to-laptop(10, 8);
+    padding: fluid(14, 10);
+    border: var(--border);
+    border-radius: var(--border-radius-s);
+    background-color: var(--color-black-08);
+
+    .person-card__image {
+      border-radius: var(--border-radius-s);
+
+      @include laptop {
+        border-radius: var(--border-radius-xs);
+      }
+    }
+  }
+
+  &__image {
+
+    &:only-child {
+      transition-duration: var(--transition-duration);
+
+      @include hover {
+        border-color: var(--color-white);
+      }
+    }
+
+    width: fluid(102, 70);
+    height: fluid(109, 75);
+    object-fit: cover;
+    border: var(--border-width-s) solid transparent;
+    border-radius: var(--border-radius-l);
+
+    @include laptop {
+      border-radius: var(--border-radius-m);
+    }
+
+    &--small {
+      width: fluid-to-laptop(57, 47);
+      height: fluid-to-laptop(60, 50);
+    }
+  }
+
+  &__name {
+    font-size: fluid-to-laptop(18, 16);
+    font-weight: 500;
+  }
+}
