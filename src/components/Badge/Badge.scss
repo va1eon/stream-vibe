@@ -33,6 +33,17 @@
     font-weight: 600;
   }
 
+  &--square {
+    column-gap: 4px;
+    padding-block: 8px;
+    border-radius: var(--border-radius-s);
+
+    @include laptop {
+      padding: 6px;
+      border-radius: var(--border-radius-xs);
+    }
+  }
+
   &__icon {
     &.icon {
       --iconSize: #{fluid-to-laptop(24, 20)};

@@ -10,6 +10,7 @@ const Badge = (props) => {
     * */
     mode = '',
     isBig = false,
+    isSquare = false,
     children,
     iconName,
     hasFillIcon,
@@ -20,6 +21,7 @@ const Badge = (props) => {
     <div className={classNames(className, 'badge', {
       [`badge--${mode}`]: mode,
       'badge--big': isBig,
+      'badge--square': isSquare,
     })}>
       {iconName && (
         <Icon
