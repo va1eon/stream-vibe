@@ -139,14 +139,14 @@ export default defineConfig({
     },
   },
   vite: {
-    plugins: [
-      {
-        name: 'full-reload',
-        handleHotUpdate({server}) {
-          server.ws.send({type: 'full-reload'})
-          return []
-        }
-      }
-    ]
+    // plugins: [
+    //   {
+    //     name: 'full-reload',
+    //     handleHotUpdate({server}) {
+    //       server.ws.send({type: 'full-reload'})
+    //       return []
+    //     }
+    //   }
+    // ]
   },
 })
