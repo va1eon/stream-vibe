@@ -7,6 +7,18 @@
     {
       "src": "/movies",
       "dest": "/movies.html"
+    },
+    {
+      "src": "/movie",
+      "dest": "/movie.html"
+    },
+    {
+      "src": "/support",
+      "dest": "/support.html"
+    },
+    {
+      "src": "/subscriptions",
+      "dest": "/subscriptions.html"
     }
   ]
 }
