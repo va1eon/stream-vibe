@@ -3,7 +3,13 @@ Thumbs.db
 db.json
 *.log
 node_modules
-dist
 .idea
 .vscode
 _copy-files
+package.json
+package-lock.json
+postcss.config.js
+minista.config.js
+jsconfig.json
+public
+src
